@@ -1,4 +1,11 @@
 Sprite2D
+CollisionShape2D
+CharacterBody2D
+BoxContainer
+Button
+Control
+VBoxContainer
+HBoxContainer
 Node2D
 ShapeCast2D
 AnimatedSprite2D
