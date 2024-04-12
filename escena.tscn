@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b1a7nuvyq4d8j"]
+[gd_scene load_steps=15 format=3 uid="uid://b1a7nuvyq4d8j"]
 
 [ext_resource type="Texture2D" uid="uid://d4m6v3vfvk7a0" path="res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_c8qf6"]
 [ext_resource type="Script" path="res://escena.gd" id="1_yr8jo"]
@@ -7,9 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dug6cbmhfqiga" path="res://tapa.png" id="3_1pqsg"]
 [ext_resource type="Script" path="res://btnDetener.gd" id="3_3kb6m"]
 [ext_resource type="Script" path="res://btnPreventivas.gd" id="4_gtos0"]
-[ext_resource type="Script" path="res://Semaforo1.gd" id="6_7sowi"]
 [ext_resource type="FontFile" uid="uid://7xjtuxj8577v" path="res://ds_digital/DS-DIGI.TTF" id="7_pghcu"]
-[ext_resource type="Script" path="res://Rojo1.gd" id="8_vlu3n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ioos"]
 texture = ExtResource("1_c8qf6")
@@ -687,14 +685,12 @@ texture_filter = 1
 position = Vector2(-225, -134)
 texture = ExtResource("2_0s4yc")
 centered = false
-script = ExtResource("6_7sowi")
 
 [node name="Rojo" type="Sprite2D" parent="Semaforo1"]
 texture_filter = 1
 position = Vector2(7, 2)
 texture = ExtResource("3_1pqsg")
 centered = false
-script = ExtResource("8_vlu3n")
 
 [node name="Amarillo" type="Sprite2D" parent="Semaforo1"]
 texture_filter = 1
