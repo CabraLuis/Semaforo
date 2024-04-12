@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712853803
+::res://::1712859456
 Car.gd::GDScript::-1::1712840072::0::1::::<>CharacterBody2D<>::
-escena.tscn::PackedScene::4213297861392105119::1712853794::0::1::::<><>::uid://d4m6v3vfvk7a0::::res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png<>uid://w0chj6yhnwix::::res://semaforo.png<>uid://dug6cbmhfqiga::::res://tapa.png
+escena.tscn::PackedScene::4213297861392105119::1712854349::0::1::::<><>::uid://d4m6v3vfvk7a0::::res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png<>uid://w0chj6yhnwix::::res://semaforo.png<>uid://dug6cbmhfqiga::::res://tapa.png
 icon.svg::CompressedTexture2D::7394237983240199635::1712801480::1712835875::1::::<><>::
 semaforo.png::CompressedTexture2D::1595898460130503447::1712843541::1712852400::1::::<><>::
 tapa.png::CompressedTexture2D::8577311060114250780::1712843631::1712853461::1::::<><>::
