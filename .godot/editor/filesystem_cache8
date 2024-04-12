@@ -1,13 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712885365
+::res://::1712886314
 btnDetener.gd::GDScript::-1::1712881905::0::1::::<>Button<>::
 btnIniciar.gd::GDScript::-1::1712884441::0::1::::<>Button<>::
 btnPreventivas.gd::GDScript::-1::1712881911::0::1::::<>Button<>::
 Car.gd::GDScript::-1::1712880650::0::1::::<>CharacterBody2D<>::
 escena.gd::GDScript::-1::1712885152::0::1::::<>Node2D<>::
-escena.tscn::PackedScene::4213297861392105119::1712885330::0::1::::<><>::uid://d4m6v3vfvk7a0::::res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png<>uid://w0chj6yhnwix::::res://semaforo.png<>res://btnIniciar.gd<>uid://dug6cbmhfqiga::::res://tapa.png<>res://btnDetener.gd<>res://btnPreventivas.gd<>uid://7xjtuxj8577v::::res://ds_digital/DS-DIGI.TTF<>res://Rojo1.gd
+escena.tscn::PackedScene::4213297861392105119::1712885717::0::1::::<><>::uid://d4m6v3vfvk7a0::::res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png<>uid://w0chj6yhnwix::::res://semaforo.png<>res://btnIniciar.gd<>uid://dug6cbmhfqiga::::res://tapa.png<>res://btnDetener.gd<>res://btnPreventivas.gd<>res://Semaforo1.gd<>uid://7xjtuxj8577v::::res://ds_digital/DS-DIGI.TTF
 icon.svg::CompressedTexture2D::7394237983240199635::1712802205::1712880694::1::::<><>::
-Rojo1.gd::GDScript::-1::1712885276::0::1::::<>Sprite2D<>::
+Rojo1.gd::GDScript::-1::1712885641::0::1::::<>Sprite2D<>::
+Semaforo1.gd::GDScript::-1::1712885686::0::1::::<>Sprite2D<>::
 semaforo.png::CompressedTexture2D::1595898460130503447::1712880650::1712880650::1::::<><>::
 tapa.png::CompressedTexture2D::8577311060114250780::1712880650::1712880650::1::::<><>::
 ::res://CP_V1.1.0_nyknck/::1712804060

@@ -1,2 +1,5 @@
 res://escena.tscn
+res://Semaforo1.gd
 res://Rojo1.gd
+res://escena.gd
+res://btnIniciar.gd

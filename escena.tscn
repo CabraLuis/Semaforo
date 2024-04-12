@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://b1a7nuvyq4d8j"]
+[gd_scene load_steps=17 format=3 uid="uid://b1a7nuvyq4d8j"]
 
 [ext_resource type="Texture2D" uid="uid://d4m6v3vfvk7a0" path="res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_c8qf6"]
+[ext_resource type="Script" path="res://escena.gd" id="1_yr8jo"]
 [ext_resource type="Texture2D" uid="uid://w0chj6yhnwix" path="res://semaforo.png" id="2_0s4yc"]
 [ext_resource type="Script" path="res://btnIniciar.gd" id="2_1b6qa"]
 [ext_resource type="Texture2D" uid="uid://dug6cbmhfqiga" path="res://tapa.png" id="3_1pqsg"]
@@ -8,6 +9,7 @@
 [ext_resource type="Script" path="res://btnPreventivas.gd" id="4_gtos0"]
 [ext_resource type="Script" path="res://Semaforo1.gd" id="6_7sowi"]
 [ext_resource type="FontFile" uid="uid://7xjtuxj8577v" path="res://ds_digital/DS-DIGI.TTF" id="7_pghcu"]
+[ext_resource type="Script" path="res://Rojo1.gd" id="8_vlu3n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ioos"]
 texture = ExtResource("1_c8qf6")
@@ -630,6 +632,7 @@ font_size = 80
 font_color = Color(1, 0, 0, 1)
 
 [node name="Escena" type="Node2D"]
+script = ExtResource("1_yr8jo")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-111.065, 12.14)
@@ -686,19 +689,20 @@ texture = ExtResource("2_0s4yc")
 centered = false
 script = ExtResource("6_7sowi")
 
-[node name="Rojo1" type="Sprite2D" parent="Semaforo1"]
+[node name="Rojo" type="Sprite2D" parent="Semaforo1"]
 texture_filter = 1
 position = Vector2(7, 2)
 texture = ExtResource("3_1pqsg")
 centered = false
+script = ExtResource("8_vlu3n")
 
-[node name="Amarillo1" type="Sprite2D" parent="Semaforo1"]
+[node name="Amarillo" type="Sprite2D" parent="Semaforo1"]
 texture_filter = 1
 position = Vector2(7, 23)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Verde1" type="Sprite2D" parent="Semaforo1"]
+[node name="Verde" type="Sprite2D" parent="Semaforo1"]
 texture_filter = 1
 position = Vector2(7, 44)
 texture = ExtResource("3_1pqsg")
@@ -711,19 +715,19 @@ texture = ExtResource("2_0s4yc")
 centered = false
 flip_v = true
 
-[node name="Rojo2" type="Sprite2D" parent="Semaforo2"]
+[node name="Rojo" type="Sprite2D" parent="Semaforo2"]
 texture_filter = 1
 position = Vector2(7, 44)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Amarillo2" type="Sprite2D" parent="Semaforo2"]
+[node name="Amarillo" type="Sprite2D" parent="Semaforo2"]
 texture_filter = 1
 position = Vector2(7, 23)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Verde2" type="Sprite2D" parent="Semaforo2"]
+[node name="Verde" type="Sprite2D" parent="Semaforo2"]
 texture_filter = 1
 position = Vector2(7, 2)
 texture = ExtResource("3_1pqsg")
@@ -737,19 +741,19 @@ texture = ExtResource("2_0s4yc")
 centered = false
 flip_v = true
 
-[node name="Rojo3" type="Sprite2D" parent="Semaforo3"]
+[node name="Rojo" type="Sprite2D" parent="Semaforo3"]
 texture_filter = 1
 position = Vector2(7.00013, 44)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Amarillo3" type="Sprite2D" parent="Semaforo3"]
+[node name="Amarillo" type="Sprite2D" parent="Semaforo3"]
 texture_filter = 1
 position = Vector2(7.00009, 23)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Verde3" type="Sprite2D" parent="Semaforo3"]
+[node name="Verde" type="Sprite2D" parent="Semaforo3"]
 texture_filter = 1
 position = Vector2(7.00002, 1.99997)
 texture = ExtResource("3_1pqsg")
@@ -762,25 +766,25 @@ rotation = 1.5708
 texture = ExtResource("2_0s4yc")
 centered = false
 
-[node name="Rojo4" type="Sprite2D" parent="Semaforo4"]
+[node name="Rojo" type="Sprite2D" parent="Semaforo4"]
 texture_filter = 1
 position = Vector2(7.00008, 1.99997)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Amarillo4" type="Sprite2D" parent="Semaforo4"]
+[node name="Amarillo" type="Sprite2D" parent="Semaforo4"]
 texture_filter = 1
 position = Vector2(7.00008, 23)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Verde4" type="Sprite2D" parent="Semaforo4"]
+[node name="Verde" type="Sprite2D" parent="Semaforo4"]
 texture_filter = 1
 position = Vector2(7.00008, 44)
 texture = ExtResource("3_1pqsg")
 centered = false
 
-[node name="Label" type="Label" parent="."]
+[node name="Timer" type="Label" parent="."]
 texture_filter = 1
 texture_repeat = 1
 offset_left = -176.0
@@ -794,4 +798,3 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="Botones/btnIniciar" to="." method="_on_btn_iniciar_pressed"]
 [connection signal="pressed" from="Botones/btnDetener" to="." method="_on_btn_detener_pressed"]
-[connection signal="pressed" from="Botones/btnPreventivas" to="." method="_on_btn_preventivas_pressed"]
