@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b1a7nuvyq4d8j"]
+[gd_scene load_steps=16 format=3 uid="uid://b1a7nuvyq4d8j"]
 
 [ext_resource type="Texture2D" uid="uid://d4m6v3vfvk7a0" path="res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_c8qf6"]
 [ext_resource type="Script" path="res://escena.gd" id="1_yr8jo"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://btnDetener.gd" id="3_3kb6m"]
 [ext_resource type="Script" path="res://btnPreventivas.gd" id="4_gtos0"]
 [ext_resource type="FontFile" uid="uid://7xjtuxj8577v" path="res://ds_digital/DS-DIGI.TTF" id="7_pghcu"]
+[ext_resource type="Texture2D" uid="uid://81flyf78gjfq" path="res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/arrow.png" id="9_4hanv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ioos"]
 texture = ExtResource("1_c8qf6")
@@ -610,6 +611,7 @@ texture = ExtResource("1_c8qf6")
 5:56/0 = 0
 7:56/0 = 0
 9:56/0 = 0
+7:42/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_frac5"]
 uv_clipping = true
@@ -682,7 +684,7 @@ script = ExtResource("4_gtos0")
 
 [node name="Semaforo1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-225, -134)
+position = Vector2(-15, -133)
 texture = ExtResource("2_0s4yc")
 centered = false
 
@@ -706,7 +708,7 @@ centered = false
 
 [node name="Semaforo2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-15, 108)
+position = Vector2(-224, 108)
 texture = ExtResource("2_0s4yc")
 centered = false
 flip_v = true
@@ -731,7 +733,7 @@ centered = false
 
 [node name="Semaforo3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-191, 108)
+position = Vector2(-192, -102)
 rotation = 1.5708
 texture = ExtResource("2_0s4yc")
 centered = false
@@ -757,7 +759,7 @@ centered = false
 
 [node name="Semaforo4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(50, -101)
+position = Vector2(50, 108)
 rotation = 1.5708
 texture = ExtResource("2_0s4yc")
 centered = false
@@ -791,6 +793,39 @@ text = "20"
 label_settings = SubResource("LabelSettings_s2iwy")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(46.8865, -31.946)
+rotation = 1.5708
+scale = Vector2(0.990598, 0.790199)
+texture = ExtResource("9_4hanv")
+centered = false
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-200, 36)
+rotation = 1.5708
+scale = Vector2(0.990598, 0.790199)
+texture = ExtResource("9_4hanv")
+centered = false
+flip_v = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-156, -128)
+scale = Vector2(0.990598, 0.790199)
+texture = ExtResource("9_4hanv")
+centered = false
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-84, 120)
+scale = Vector2(0.990598, 0.790199)
+texture = ExtResource("9_4hanv")
+centered = false
+flip_v = true
 
 [connection signal="pressed" from="Botones/btnIniciar" to="." method="_on_btn_iniciar_pressed"]
 [connection signal="pressed" from="Botones/btnDetener" to="." method="_on_btn_detener_pressed"]
