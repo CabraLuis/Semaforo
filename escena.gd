@@ -21,13 +21,14 @@ func timer_Green():
 	get_node("Semaforo"+str(semaforo)+"/Rojo").visible = true
 	await get_tree().create_timer(0.5).timeout	
 	time = 0.0
+	get_node("Semaforo"+str(semaforo)+"/Verde").label_settings.font_color = Color(0,255,0)
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = false
 	await get_tree().create_timer(19.5).timeout
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = true
 	await get_tree().create_timer(0.5).timeout
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = false
-	time = 0.0
 	await get_tree().create_timer(0.5).timeout
+	time = 0.0
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = true
 	await get_tree().create_timer(0.5).timeout
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = false
