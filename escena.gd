@@ -15,7 +15,7 @@ func _process(delta):
 	if start:
 		time += delta
 		seconds = fmod(time,60)
-		get_node("Timer").text = str(20 - seconds)
+		get_node("Timer").text = str(15 - seconds)
 
 func timer_Green():
 	get_node("Semaforo"+str(semaforo)+"/Rojo").visible = true
@@ -27,7 +27,7 @@ func timer_Green():
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = false
 	get_node("Semaforo"+str(semaforo+1)+"/Verde").visible = false
 	get_node("Timer").visible = true	
-	await get_tree().create_timer(19.5).timeout
+	await get_tree().create_timer(14.5).timeout
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = true
 	get_node("Semaforo"+str(semaforo+1)+"/Verde").visible = true
 	get_node("Timer").visible = false
@@ -52,7 +52,7 @@ func timer_Green():
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = false
 	get_node("Semaforo"+str(semaforo+1)+"/Verde").visible = false
 	get_node("Timer").visible = true	
-	await get_tree().create_timer(0.5).timeout
+	await get_tree().create_timer(0.5).timeoutw
 
 func timer_Yellow():
 	get_node("Semaforo"+str(semaforo)+"/Verde").visible = true
@@ -95,7 +95,7 @@ func _on_btn_iniciar_pressed():
 func _on_btn_detener_pressed():
 	start = false
 	time = 0.0
-	get_node("Timer").text = "20"
+	get_node("Timer").text = "15"
 	get_node("Semaforo1/Rojo").visible = false
 	get_node("Semaforo2/Rojo").visible = false
 	get_node("Semaforo3/Rojo").visible = false
