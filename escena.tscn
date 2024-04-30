@@ -1,12 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://b1a7nuvyq4d8j"]
+[gd_scene load_steps=13 format=3 uid="uid://b1a7nuvyq4d8j"]
 
 [ext_resource type="Texture2D" uid="uid://d4m6v3vfvk7a0" path="res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_c8qf6"]
 [ext_resource type="Script" path="res://escena.gd" id="1_yr8jo"]
 [ext_resource type="Texture2D" uid="uid://w0chj6yhnwix" path="res://semaforo.png" id="2_0s4yc"]
-[ext_resource type="Script" path="res://btnIniciar.gd" id="2_1b6qa"]
 [ext_resource type="Texture2D" uid="uid://dug6cbmhfqiga" path="res://tapa.png" id="3_1pqsg"]
-[ext_resource type="Script" path="res://btnDetener.gd" id="3_3kb6m"]
-[ext_resource type="Script" path="res://btnPreventivas.gd" id="4_gtos0"]
 [ext_resource type="FontFile" uid="uid://7xjtuxj8577v" path="res://ds_digital/DS-DIGI.TTF" id="7_pghcu"]
 [ext_resource type="Texture2D" uid="uid://81flyf78gjfq" path="res://CP_V1.1.0_nyknck/CP_V1.0.4_nyknck/arrow.png" id="9_4hanv"]
 
@@ -646,41 +643,39 @@ layer_2/name = "props2"
 layer_2/tile_data = PackedInt32Array(1114103, 2031616, 26, 1179639, 2031616, 27, 655351, 2031616, 26, 720887, 2031616, 27, -983061, 1900544, 26, -917525, 1900544, 27, -983055, 1900544, 26, -917519, 1900544, 27, -983049, 1900544, 26, -917513, 1900544, 27, -327701, 1900544, 26, -262165, 1900544, 27, -327695, 1900544, 26, -262159, 1900544, 27, -327689, 1900544, 26, -262153, 1900544, 27, -393195, 1900544, 26, -327659, 1900544, 27, -393199, 1900544, 26, -327663, 1900544, 27, -393205, 1900544, 26, -327669, 1900544, 27, -1310725, 1703936, 26, -1245189, 1703936, 27, -1310724, 1769472, 26, -1048581, 1703936, 26, -983045, 1703936, 27, -1048580, 1769472, 26, -524293, 1703936, 26, -458757, 1703936, 27, -524292, 1769472, 26, 458747, 1703936, 26, 524283, 1703936, 27, 458748, 1769472, 26, 851963, 1703936, 26, 917499, 1703936, 27, 851964, 1769472, 26, 1245179, 1703936, 26, 1310715, 1703936, 27, 1245180, 1769472, 26, 1179653, 1703936, 268435482, 1179652, 1769472, 268435482, 1245189, 1703936, 268435483, 786437, 1703936, 268435482, 786436, 1769472, 268435482, 851973, 1703936, 268435483, 393221, 1703936, 268435482, 393220, 1769472, 268435482, 458757, 1703936, 268435483, -589819, 1703936, 268435482, -589820, 1769472, 268435482, -524283, 1703936, 268435483, -1114107, 1703936, 268435482, -1114108, 1769472, 268435482, -1048571, 1703936, 268435483, -1376251, 1703936, 268435482, -1376252, 1769472, 268435482, -1310715, 1703936, 268435483, 327659, 1572864, 26, 393195, 1572864, 27, 327665, 1572864, 26, 393201, 1572864, 27, 327671, 1572864, 26, 393207, 1572864, 27, 262155, 1572864, 26, 327691, 1572864, 27, 262161, 1572864, 26, 327697, 1572864, 27, 262165, 1572864, 26, 327701, 1572864, 27, -983035, 2031616, 15, -917499, 2031616, 16, -851963, 2031616, 17, -983034, 2097152, 15, -917498, 2097152, 16, -851962, 2097152, 17, -786426, 2097152, 18, -720890, 2097152, 19, -983033, 2162688, 15, -917497, 2162688, 16, -851961, 2162688, 17, -1376238, 2359296, 11, -1310702, 2359296, 12, -1376237, 2490368, 11, -1310701, 2490368, 12, -1376236, 2555904, 11, -1310700, 2555904, 12)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1, 0)
-offset = Vector2(0, 20.365)
+position = Vector2(0, -1)
+offset = Vector2(-89.135, 25.225)
+zoom = Vector2(1.5, 1.5)
 
 [node name="Botones" type="BoxContainer" parent="."]
 texture_filter = 1
 texture_repeat = 1
-offset_left = 244.0
-offset_top = -321.0
-offset_right = 448.0
-offset_bottom = -157.0
-vertical = true
+offset_left = -448.0
+offset_top = 192.0
+offset_right = 240.0
+offset_bottom = 234.0
+alignment = 1
 
 [node name="btnIniciar" type="Button" parent="Botones"]
 texture_filter = 1
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bl88")
 text = "INICIAR"
-script = ExtResource("2_1b6qa")
 
 [node name="btnDetener" type="Button" parent="Botones"]
 texture_filter = 1
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_3fs6o")
 text = "DETENER"
-script = ExtResource("3_3kb6m")
 
 [node name="btnPreventivas" type="Button" parent="Botones"]
 texture_filter = 1
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_4gfsf")
 text = "PREVENTIVAS"
-script = ExtResource("4_gtos0")
 
 [node name="Semaforo1" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -831,3 +826,4 @@ flip_v = true
 
 [connection signal="pressed" from="Botones/btnIniciar" to="." method="_on_btn_iniciar_pressed"]
 [connection signal="pressed" from="Botones/btnDetener" to="." method="_on_btn_detener_pressed"]
+[connection signal="pressed" from="Botones/btnPreventivas" to="." method="_on_btn_preventivas_pressed"]

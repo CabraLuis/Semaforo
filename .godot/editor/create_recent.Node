@@ -1,3 +1,5 @@
+CollisionShape2D
+Polygon2D
 Node
 Sprite2D
 Timer
@@ -5,11 +7,8 @@ CanvasLayer
 Label
 RichTextLabel
 TextEdit
-CollisionShape2D
 CharacterBody2D
 BoxContainer
 Button
 Control
 VBoxContainer
-HBoxContainer
-Node2D
